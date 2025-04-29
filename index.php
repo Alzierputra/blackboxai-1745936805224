@@ -1,4 +1,19 @@
-<?php require_once 'includes/header.php'; ?>
+<?php
+require_once 'includes/header.php';
+
+// Get available fields
+$stmt = $functions->query("SELECT * FROM lapangan WHERE status = 'tersedia'");
+$lapangan = $stmt ? $stmt->fetchAll(PDO::FETCH_ASSOC) : [];
+
+// Get recent reviews
+$stmt = $functions->query(
+    "SELECT u.nama, ul.rating, ul.komentar, ul.created_at 
+     FROM ulasan ul 
+     JOIN users u ON ul.user_id = u.id 
+     ORDER BY ul.created_at DESC LIMIT 3"
+);
+$testimonials = $stmt ? $stmt->fetchAll(PDO::FETCH_ASSOC) : [];
+?>
 
 <!-- Hero Section -->
 <div class="relative bg-blue-600">
@@ -80,14 +95,7 @@
         </div>
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <?php
-            $query = "SELECT * FROM lapangan WHERE status = 'tersedia'";
-            $stmt = $functions->db->prepare($query);
-            $stmt->execute();
-            $lapangan = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach($lapangan as $field):
-            ?>
+            <?php foreach($lapangan as $field): ?>
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                 <?php if ($field['foto']): ?>
                     <img class="w-full h-48 object-cover" src="<?php echo $field['foto']; ?>" alt="<?php echo $field['nama']; ?>">
@@ -126,17 +134,7 @@
         </div>
 
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <?php
-            $query = "SELECT u.nama, ul.rating, ul.komentar, ul.created_at 
-                     FROM ulasan ul 
-                     JOIN users u ON ul.user_id = u.id 
-                     ORDER BY ul.created_at DESC LIMIT 3";
-            $stmt = $functions->db->prepare($query);
-            $stmt->execute();
-            $testimonials = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-            foreach($testimonials as $testimonial):
-            ?>
+            <?php foreach($testimonials as $testimonial): ?>
             <div class="bg-gray-50 rounded-lg p-6">
                 <div class="flex items-center mb-4">
                     <div class="flex-shrink-0">
