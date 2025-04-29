@@ -1,0 +1,21 @@
+{
+    "name": "iFutsal Sayan Bekasi",
+    "short_name": "iFutsal Sayan",
+    "description": "Sewa lapangan futsal berkualitas di Bekasi",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2563eb",
+    "icons": [
+        {
+            "src": "/assets/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
