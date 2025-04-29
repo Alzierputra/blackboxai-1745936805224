@@ -7,9 +7,9 @@
         <div class="absolute inset-0 bg-blue-600 mix-blend-multiply"></div>
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">FutsalKita</h1>
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">iFutsal Sayan Bekasi</h1>
         <p class="mt-6 text-xl text-white max-w-3xl">
-            Sewa lapangan futsal berkualitas dengan harga terjangkau. Tersedia 3 lapangan dengan fasilitas lengkap untuk main reguler atau turnamen.
+            Sewa lapangan futsal berkualitas di Bekasi dengan harga terjangkau. Tersedia 3 lapangan dengan fasilitas lengkap untuk main reguler atau turnamen. Lokasi strategis dan mudah dijangkau.
         </p>
         <div class="mt-10">
             <a href="/jadwal.php" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
@@ -165,6 +165,56 @@
     </div>
 </div>
 
+<!-- Contact Section -->
+<div class="bg-gray-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center mb-12">
+            <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">Kontak</h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Hubungi Kami
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Informasi Kontak</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-gray-400"></i>
+                            <span class="text-gray-600">Jl. Sayan, Bekasi</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-gray-400"></i>
+                            <span class="text-gray-600">+62 123 4567 890</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-gray-400"></i>
+                            <span class="text-gray-600">info@ifutsalsayan.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Jam Operasional</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Senin - Jumat</span>
+                            <span class="text-gray-900">08:00 - 23:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span class="text-gray-600">Sabtu - Minggu</span>
+                            <span class="text-gray-900">08:00 - 23:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- CTA Section -->
 <div class="bg-blue-600">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -173,7 +223,7 @@
                 Siap Untuk Bermain?
             </h2>
             <p class="mt-4 text-lg text-blue-100">
-                Booking lapangan sekarang dan nikmati pengalaman bermain futsal terbaik.
+                Booking lapangan sekarang dan nikmati pengalaman bermain futsal terbaik di Bekasi.
             </p>
             <div class="mt-8 flex justify-center">
                 <a href="/jadwal.php" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
