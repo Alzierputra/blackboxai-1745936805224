@@ -81,9 +81,15 @@ $bank = $stmt->fetch(PDO::FETCH_ASSOC);
             <div class="px-4 sm:px-0">
                 <h3 class="text-lg font-medium leading-6 text-gray-900">Informasi Lapangan</h3>
                 <div class="mt-4">
-                    <img src="assets/images/lapangan-<?php echo $lapangan['id']; ?>.jpg" 
-                         alt="<?php echo $lapangan['nama']; ?>"
-                         class="w-full h-48 object-cover rounded-lg">
+                    <?php if ($lapangan['foto']): ?>
+                        <img src="<?php echo $lapangan['foto']; ?>" 
+                             alt="<?php echo $lapangan['nama']; ?>"
+                             class="w-full h-48 object-cover rounded-lg">
+                    <?php else: ?>
+                        <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded-lg">
+                            <i class="fas fa-image text-4xl text-gray-400"></i>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="mt-4">
                     <h4 class="text-xl font-semibold"><?php echo $lapangan['nama']; ?></h4>
