@@ -20,6 +20,7 @@ CREATE TABLE lapangan (
     nama VARCHAR(100),
     deskripsi TEXT,
     harga_per_jam DECIMAL(10,2),
+    foto VARCHAR(255),
     status ENUM('tersedia', 'maintenance') DEFAULT 'tersedia',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -104,3 +105,12 @@ VALUES ('SeaBank', '901245634730', 'Muhammad Alzier Putra Purnama');
 -- Insert default admin account
 INSERT INTO users (nama, email, password, role, status_verifikasi) 
 VALUES ('Admin', 'admin@admin.com', 'admin123', 'admin', TRUE);
+
+-- Create uploads directory
+CREATE TABLE IF NOT EXISTS `uploads` (
+    `id` INT PRIMARY KEY AUTO_INCREMENT,
+    `directory` VARCHAR(255)
+);
+
+-- Insert default uploads directory
+INSERT INTO `uploads` (`directory`) VALUES ('uploads/lapangan');
