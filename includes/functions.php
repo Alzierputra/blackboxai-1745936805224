@@ -3,13 +3,17 @@ require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/../config/whatsapp.php';
 
 class Functions {
-    private $db;
-    private $whatsapp;
+    protected $db;
+    protected $whatsapp;
 
     public function __construct() {
         $database = new Database();
         $this->db = $database->getConnection();
         $this->whatsapp = new WhatsAppConfig();
+    }
+
+    public function getDb() {
+        return $this->db;
     }
 
     // User Management Functions
@@ -189,6 +193,17 @@ class Functions {
 
     public function generateInvoiceNumber() {
         return 'INV-' . date('Ymd') . '-' . str_pad(rand(0, 9999), 4, '0', STR_PAD_LEFT);
+    }
+
+    // Query Functions
+    public function query($sql, $params = []) {
+        try {
+            $stmt = $this->db->prepare($sql);
+            $stmt->execute($params);
+            return $stmt;
+        } catch(PDOException $e) {
+            return false;
+        }
     }
 }
 ?>
