@@ -8,7 +8,17 @@ $functions = new Functions();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sewa Lapangan Futsal</title>
+    <title>iFutsal Sayan Bekasi - Sewa Lapangan Futsal</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sewa lapangan futsal berkualitas di Bekasi dengan harga terjangkau. Tersedia 3 lapangan dengan fasilitas lengkap untuk main reguler atau turnamen. Booking online 24 jam.">
+    <meta name="keywords" content="futsal, lapangan futsal, sewa lapangan, futsal bekasi, iFutsal Sayan, booking futsal">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="iFutsal Sayan Bekasi - Sewa Lapangan Futsal">
+    <meta property="og:description" content="Sewa lapangan futsal berkualitas di Bekasi dengan harga terjangkau. Booking online 24 jam.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ifutsalsayan.com">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -35,7 +45,7 @@ $functions = new Functions();
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
                         <a href="/" class="text-xl font-bold text-gray-800">
-                            Futsal<span class="text-blue-600">Kita</span>
+                            iFutsal <span class="text-blue-600">Sayan Bekasi</span>
                         </a>
                     </div>
                     
