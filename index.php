@@ -89,7 +89,13 @@
             foreach($lapangan as $field):
             ?>
             <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="assets/images/lapangan-<?php echo $field['id']; ?>.jpg" alt="<?php echo $field['nama']; ?>">
+                <?php if ($field['foto']): ?>
+                    <img class="w-full h-48 object-cover" src="<?php echo $field['foto']; ?>" alt="<?php echo $field['nama']; ?>">
+                <?php else: ?>
+                    <div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                        <i class="fas fa-image text-4xl text-gray-400"></i>
+                    </div>
+                <?php endif; ?>
                 <div class="p-6">
                     <h3 class="text-xl font-semibold text-gray-900"><?php echo $field['nama']; ?></h3>
                     <p class="mt-2 text-gray-600"><?php echo $field['deskripsi']; ?></p>
