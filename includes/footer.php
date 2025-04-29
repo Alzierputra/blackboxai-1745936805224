@@ -6,7 +6,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Company Info -->
                 <div class="col-span-1 md:col-span-2">
-                    <h3 class="text-lg font-semibold text-gray-900 mb-4">FutsalKita</h3>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">iFutsal Sayan Bekasi</h3>
                     <p class="text-gray-600 mb-4">
                         Tempat bermain futsal terbaik dengan fasilitas lengkap dan pelayanan profesional.
                     </p>
@@ -48,7 +48,7 @@
                     <ul class="space-y-2">
                         <li class="flex items-start space-x-2">
                             <i class="fas fa-map-marker-alt mt-1 text-gray-400"></i>
-                            <span class="text-gray-600">Jl. Futsal No. 123, Kota</span>
+                            <span class="text-gray-600">Jl. Sayan, Bekasi</span>
                         </li>
                         <li class="flex items-center space-x-2">
                             <i class="fas fa-phone text-gray-400"></i>
@@ -56,7 +56,7 @@
                         </li>
                         <li class="flex items-center space-x-2">
                             <i class="fas fa-envelope text-gray-400"></i>
-                            <span class="text-gray-600">info@futsalkita.com</span>
+                            <span class="text-gray-600">info@ifutsalsayan.com</span>
                         </li>
                     </ul>
                 </div>
@@ -81,7 +81,7 @@
             <!-- Copyright -->
             <div class="border-t border-gray-200 mt-8 pt-8">
                 <p class="text-center text-gray-500">
-                    &copy; <?php echo date('Y'); ?> FutsalKita. All rights reserved.
+                    &copy; <?php echo date('Y'); ?> iFutsal Sayan Bekasi. All rights reserved.
                 </p>
             </div>
         </div>
